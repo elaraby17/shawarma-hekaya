@@ -1,0 +1,17 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5em;
+}
+@media (max-width:767px) {
+    .container{
+        width: 95%;
+        padding: 2em;
+    }
+}
+@media (max-width:500px) {
+    .container{
+        width: 95%;
+        padding: 1em;
+    }
+}

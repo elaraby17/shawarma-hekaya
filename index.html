@@ -10,17 +10,51 @@
         <!-- style file css link -->
         <link rel="stylesheet" href="./style/main.css" />
     </head>
-    <body class="font-['Cairo',sans-serif] bg-gray-100 scroll-smooth ">
-
-
+    <body class="font-['Cairo',sans-serif] bg-gray-100 scroll-smooth">
         <!-- start header section -->
         <header class="header flex justify-between items-center p-4 bg-white shadow-md fixed top-0 left-0 w-full z-10">
-            <div class="logo flex items-center">
-                <a href="#"><img class="w-20 h-20" src="./assists/image/WhatsApp_Image_2025-10-30_at_19.09.14_41ad5fb0-removebg-preview.png" alt="logo" /></a>
+            <div class="logo flex items-center gap-4">
+                <a href="#"><img class="w-20 h-20 light-mode" src="./assists/image/WhatsApp_Image_2025-10-30_at_19.09.14_41ad5fb0-removebg-preview.png" alt="logo" /></a>
+                <a href="#"><img class="w-20 h-20 dark-mode rounded-2xl" src="./assists/image/paner.jpg" alt="logo" /></a>
+                <div class="btn-mode w-20 h-10 ml-4 flex items-center bg-gray-200 rounded-full p-1 cursor-pointer relative">
+                    <div class="sun">
+                        <svg
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            height="20px"
+                            width="20px"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </div>
+                    <div class="moon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path>
+                        </svg>
+                    </div>
+                </div>
             </div>
             <nav class="relative">
                 <!-- hamburger toggle for small screens -->
-                <button id="navToggle" aria-controls="mainNav" aria-expanded="false" class="md:hidden p-2 rounded-md text-gray-700 hover:text-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-400" aria-label="فتح القائمة">
+                <button
+                    id="navToggle"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    class="md:hidden p-2 rounded-md text-gray-700 hover:text-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-400"
+                    aria-label="فتح القائمة">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -64,118 +98,113 @@
                     <li><a href="#minu" class="block">القائمة</a></li>
                 </ul>
                 <div class="social-media flex gap-4 mt-4">
-                    <a href="#" class="text-gray-600 hover:text-amber-600">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                    <a href="https://www.facebook.com/share/1JqsbubrEW/?mibextid=wwXIfr" target="_blank" class="text-gray-900 hover:text-amber-600">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
                         </svg>
                     </a>
-                    <a href="#" class="text-gray-600 hover:text-amber-600">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 8.24537V15.5C16 19.0899 13.0899 22 9.5 22C5.91015 22 3 19.0899 3 15.5C3 11.9101 5.91015 9 9.5 9C10.0163 9 10.5185 9.06019 11 9.17393V12.3368C10.5454 12.1208 10.0368 12 9.5 12C7.567 12 6 13.567 6 15.5C6 17.433 7.567 19 9.5 19C11.433 19 13 17.433 13 15.5V2H16C16 4.76142 18.2386 7 21 7V10C19.1081 10 17.3696 9.34328 16 8.24537Z"></path>
+                    <a href="https://www.tiktok.com/@shawarma_hekaya?_t=ZS-90zXZeKTZSS&_r=1" target="_blank" class="text-gray-900 hover:text-amber-600">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 8.24537V15.5C16 19.0899 13.0899 22 9.5 22C5.91015 22 3 19.0899 3 15.5C3 11.9101 5.91015 9 9.5 9C10.0163 9 10.5185 9.06019 11 9.17393V12.3368C10.5454 12.1208 10.0368 12 9.5 12C7.567 12 6 13.567 6 15.5C6 17.433 7.567 19 9.5 19C11.433 19 13 17.433 13 15.5V2H16C16 4.76142 18.2386 7 21 7V10C19.1081 10 17.3696 9.34328 16 8.24537Z"></path>
                         </svg>
                     </a>
-                    <a href="#" class="text-gray-600 hover:text-amber-600">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                    <a href="https://www.instagram.com/shawarma6809?igsh=a3gzenFuMGx6NTFyZQ==" target="_blank" class="text-gray-600 hover:text-amber-600">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
                         </svg>
                     </a>
                 </div>
             </div>
         </div>
 
-    <!-- start main section -->
-    <main class="flex-1">
-    <section class="hero mt-20 h-screen bg-[url('./assists/image/paner.jpg')] bg-no-repeat bg-cover bg-center relative">
+        <!-- start main section -->
+
+        <section class="hero mt-10 h-screen bg-[url('./assists/image/paner.jpg')] bg-no-repeat bg-cover bg-center relative">
             <div class="h-screen backdrop-blur-xl">
                 <div class="container text-center text-white flex flex-col justify-center items-center h-full gap-6">
+                    <img src="./assists/image/WhatsApp_Image_2025-10-30_at_19.09.14_41ad5fb0-removebg-preview.png" alt="logo" class="w-60" />
                     <h2 class="text-2xl text-shadow-amber-50">مرحبا بكم <span class="text-3xl font-bold text-amber-700"> في شاورما حكاية </span></h2>
-                    <p class="text-1xl">مستني ايه ادخل شوف احسن شاورما وابداء معانا الحكاية</p>
+                    <p class="text-1xl">مستني ايه ادخل شوف احسن شاورما وابدأ معانا الحكاية</p>
                     <a href="#minu" class="btn-minu bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition duration-300">اطلب الآن</a>
                 </div>
             </div>
         </section>
-    <!-- end main section -->
+        <!-- end main section -->
         <section id="about" class="py-16 bg-white">
             <div class="container">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold mb-4">معلومات عن <span class="text-amber-600">الحكاية</span></h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">نقدم لكم أشهى وألذ أنواع الشاورما المحضرة بعناية فائقة وبأيدي
-                        أمهر الطهاة</p>
+                    <p class="text-gray-600 max-w-2xl mx-auto">نقدم لكم أشهى وألذ أنواع الشاورما المحضرة بعناية فائقة وبأيدي أمهر الطهاة</p>
                 </div>
-        
+
                 <!-- features grid -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                    <div class="text-center p-6 rounded-lg bg-amber-50 shadow-sm">
+                    <div class="card text-center p-6 rounded-lg bg-amber-50 shadow-sm">
                         <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                             <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-2">جودة عالية</h3>
                         <p class="text-gray-600">نستخدم أجود أنواع اللحوم والمكونات الطازجة</p>
                     </div>
-                    <div class="text-center p-6 rounded-lg bg-amber-50 shadow-sm">
+                    <div class="card text-center p-6 rounded-lg bg-amber-50 shadow-sm">
                         <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                             <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-2">خدمة سريعة</h3>
                         <p class="text-gray-600">نضمن لك تجربة طعام سريعة وممتعة</p>
                     </div>
-                    <div class="text-center p-6 rounded-lg bg-amber-50 shadow-sm">
+                    <div class="card text-center p-6 rounded-lg bg-amber-50 shadow-sm">
                         <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                             <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-2">رضا العملاء</h3>
                         <p class="text-gray-600">رضاكم هدفنا ونسعى دائماً لتقديم الأفضل</p>
                     </div>
                 </div>
-        <div class="whats-app">
-            <a href="https://wa.me/201022647148" target="_blank" rel="noopener noreferrer">
-                <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" class="w-14 h-14 fixed bottom-4 right-4 z-50 hover:scale-110 transition-transform"/>
-            </a>
-        </div>
+                <div class="whats-app">
+                    <a href="https://wa.me/201022647148" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" class="w-14 h-14 fixed bottom-4 right-4 z-50 hover:scale-110 transition-transform" />
+                    </a>
+                </div>
                 <!-- about content -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="space-y-4">
                         <h3 class="text-2xl font-bold mb-4">قصة <span class="text-amber-600">حكايتنا</span></h3>
-                        <p class="text-gray-600 mb-4">بدأت حكايتنا منذ سنوات بشغف كبير لتقديم أشهى أنواع الشاورما. نحن نؤمن بأن
-                            الطعام الجيد يجمع الناس ويصنع الذكريات الجميلة.</p>
-                        <p class="text-gray-600 mb-4">نفخر بأننا نقدم لكم وصفات فريدة ومميزة، ونحرص على اختيار أفضل المكونات
-                            لضمان مذاق لا يُنسى.</p>
+                        <p class="text-gray-600 mb-4">بدأت حكايتنا منذ سنوات بشغف كبير لتقديم أشهى أنواع الشاورما. نحن نؤمن بأن الطعام الجيد يجمع الناس ويصنع الذكريات الجميلة.</p>
+                        <p class="text-gray-600 mb-4">نفخر بأننا نقدم لكم وصفات فريدة ومميزة، ونحرص على اختيار أفضل المكونات لضمان مذاق لا يُنسى.</p>
                         <div class="flex gap-4 mt-6">
                             <div class="text-center">
                                 <span class="block text-3xl font-bold text-amber-600">10+</span>
-                                <span class="text-gray-600">سنوات خبرة</span>
+                                <span class="span-abouttext-gray-600">سنوات خبرة</span>
                             </div>
                             <div class="text-center">
                                 <span class="block text-3xl font-bold text-amber-600">1000+</span>
-                                <span class="text-gray-600">عميل سعيد</span>
+                                <span class="span-abouttext-gray-600">عميل سعيد</span>
                             </div>
                             <div class="text-center">
                                 <span class="block text-3xl font-bold text-amber-600">5</span>
-                                <span class="text-gray-600">فروع</span>
+                                <span class="span-abouttext-gray-600">فروع</span>
                             </div>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-4">
-                        <img src="./assists/image/sh1.jpg" alt="صورة المطعم"
-                            class="rounded-lg shadow-md w-full h-48 object-cover">
-                        <img src="./assists/image/sh2.jpg" alt="طبق شاورما"
-                            class="rounded-lg shadow-md w-full h-48 object-cover">
+                        <img src="./assists/image/sh1.jpg" alt="صورة المطعم" class="rounded-lg shadow-md w-full h-48 object-cover" />
+                        <img src="./assists/image/sh2.jpg" alt="طبق شاورما" class="rounded-lg shadow-md w-full h-48 object-cover" />
                     </div>
                 </div>
             </div>
         </section>
-    <!-- start minu section -->
-        <section class="minu " id="minu">
+        <!-- start minu section -->
+        <section class="minu" id="minu">
             <div class="container">
                 <div class="header-minu">
                     <h2 class="text-3xl font-bold text-center mb-8">منيو <span class="text-amber-600">الحكاية</span></h2>
@@ -183,20 +212,23 @@
                 <div class="header-filter text-center mb-8">
                     <div class="filter-controls flex flex-col md:flex-row items-center justify-between gap-4">
                         <input id="searchInput" type="search" placeholder="ابحث عن منتج أو وصف..." class="search-input w-full md:w-1/3 border border-gray-300 rounded-lg px-4 py-2 text-right" />
+
                         <ul id="categoryList" class="categories flex flex-wrap gap-4 justify-center items-center"></ul>
                     </div>
                 </div>
                 <div class="minu-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
             </div>
         </section>
-    <!-- end minu section -->
+        <!-- Cart floating button -->
+
+        <!-- end minu section -->
         <!-- start footer section -->
-        <footer class="bg-gray-900 text-gray-100 mt-12">
+        <footer class="bg-gray-900 text-gray-100 mt-12 border-t-2 border-amber-600">
             <div class="container py-12">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="space-y-4">
                         <a href="#" class="flex items-center gap-3">
-                            <img src="./assists/image/icon.ico.png" alt="logo" class="w-14 h-14 rounded">
+                            <img src="./assists/image/icon.ico.png" alt="logo" class="w-14 h-14 rounded" />
                             <span class="text-xl font-bold">شاورما حكاية</span>
                         </a>
                         <p class="text-sm text-gray-300">أشهى أنواع الشاورما معدة يومياً بمكونات طازجة وخدمة سريعة.</p>
@@ -204,7 +236,7 @@
                     <div class="space-y-4">
                         <h4 class="font-semibold">تواصل معنا</h4>
                         <ul class="text-sm text-gray-300 space-y-2">
-                            <li>الهاتف: <a href="tel:+201234567890" class="text-amber-400">01022647148</a></li>               
+                            <li>الهاتف: <a href="tel:+201234567890" class="text-amber-400">01022647148</a></li>
                             <li>ساعات العمل: السبت - الخميس 4م - 2ص</li>
                         </ul>
                     </div>
@@ -212,10 +244,16 @@
                         <h4 class="font-semibold">تابعنا</h4>
                         <div class="flex gap-3">
                             <a href="https://www.facebook.com/share/1JqsbubrEW/?mibextid=wwXIfr" target="_blank" class="p-2 rounded bg-gray-800 hover:bg-amber-600">
-                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.99H7.898v-2.888h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.888h-2.33v6.99C18.343 21.128 22 16.991 22 12z"/></svg>
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.99H7.898v-2.888h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.888h-2.33v6.99C18.343 21.128 22 16.991 22 12z" />
+                                </svg>
                             </a>
                             <a href="https://www.instagram.com/shawarma6809?igsh=a3gzenFuMGx6NTFyZQ==" target="_blank" class="p-2 rounded bg-gray-800 hover:bg-amber-600">
-                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.343 3.608 1.318.975.975 1.256 2.242 1.318 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.343 2.633-1.318 3.608-.975.975-2.242 1.256-3.608 1.318-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.343-3.608-1.318-.975-.975-1.256-2.242-1.318-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.343-2.633 1.318-3.608C4.526 2.576 5.793 2.295 7.159 2.233 8.425 2.175 8.805 2.163 12 2.163zm0 1.838c-3.17 0-3.543.012-4.788.069-1.16.052-1.79.24-2.21.399-.56.22-.96.48-1.384.904-.424.424-.684.824-.904 1.384-.158.42-.347 1.05-.399 2.21-.057 1.245-.069 1.618-.069 4.788s.012 3.543.069 4.788c.052 1.16.24 1.79.399 2.21.22.56.48.96.904 1.384.424.424.824.684 1.384.904.42.158 1.05.347 2.21.399 1.245.057 1.618.069 4.788.069s3.543-.012 4.788-.069c1.16-.052 1.79-.24 2.21-.399.56-.22.96-.48 1.384-.904.424-.424.684-.824.904-1.384.158-.42.347-1.05.399-2.21.057-1.245.069-1.618.069-4.788s-.012-3.543-.069-4.788c-.052-1.16-.24-1.79-.399-2.21-.22-.56-.48-.96-.904-1.384-.424-.424-.824-.684-1.384-.904-.42-.158-1.05-.347-2.21-.399-1.245-.057-1.618-.069-4.788-.069zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1 0-2.879 1.44 1.44 0 0 1 0 2.879z"/></svg>
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.343 3.608 1.318.975.975 1.256 2.242 1.318 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.343 2.633-1.318 3.608-.975.975-2.242 1.256-3.608 1.318-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.343-3.608-1.318-.975-.975-1.256-2.242-1.318-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.343-2.633 1.318-3.608C4.526 2.576 5.793 2.295 7.159 2.233 8.425 2.175 8.805 2.163 12 2.163zm0 1.838c-3.17 0-3.543.012-4.788.069-1.16.052-1.79.24-2.21.399-.56.22-.96.48-1.384.904-.424.424-.684.824-.904 1.384-.158.42-.347 1.05-.399 2.21-.057 1.245-.069 1.618-.069 4.788s.012 3.543.069 4.788c.052 1.16.24 1.79.399 2.21.22.56.48.96.904 1.384.424.424.824.684 1.384.904.42.158 1.05.347 2.21.399 1.245.057 1.618.069 4.788.069s3.543-.012 4.788-.069c1.16-.052 1.79-.24 2.21-.399.56-.22.96-.48 1.384-.904.424-.424.684-.824.904-1.384.158-.42.347-1.05.399-2.21.057-1.245.069-1.618.069-4.788s-.012-3.543-.069-4.788c-.052-1.16-.24-1.79-.399-2.21-.22-.56-.48-.96-.904-1.384-.424-.424-.824-.684-1.384-.904-.42-.158-1.05-.347-2.21-.399-1.245-.057-1.618-.069-4.788-.069zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1 0-2.879 1.44 1.44 0 0 1 0 2.879z" />
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -223,7 +261,9 @@
 
                 <div class="mt-8 border-t border-gray-800 pt-6 text-center text-sm text-gray-400">
                     <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                        <div>© <span id="year">2025</span> <a href="https://www.facebook.com/share/16T7DYvmFX/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">El Araby</a> كل الحقوق محفوظة.</div>
+                        <div>
+                            © <span id="year">2025</span> <a href="https://www.facebook.com/share/16T7DYvmFX/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">El Araby</a> كل الحقوق محفوظة.
+                        </div>
                         <a href="#top" class="text-amber-400 hover:underline">العودة للأعلى</a>
                     </div>
                 </div>

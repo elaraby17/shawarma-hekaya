@@ -105,15 +105,19 @@ body[data-theme="dark"] .hero {
 body[data-theme="dark"] #about {
     background: #0f172a; /* slate-800 */
 }
-body[data-theme="dark"] #about .card {
-    background: #1e293b; /* slate-800 */
-    transition: .5S;
+body[data-theme="dark"] #about .card,
+body[data-theme="dark"] .info-card {
+    background: #1e293b !important; /* slate-800 */
+    transition: .5s;
 }
-body[data-theme="dark"] #about .card:hover {
-    background: #374151; /* gray-700 */
+body[data-theme="dark"] #about .card:hover,
+body[data-theme="dark"] .info-card:hover {
+    background: #1e293b !important; /* slate-800 */
 }
 body[data-theme="dark"] #about .card h3,
-body[data-theme="dark"] #about .card p {
+body[data-theme="dark"] #about .card p,
+body[data-theme="dark"] .info-card h3,
+body[data-theme="dark"] .info-card p {
     color: #f8fafc; /* slate-50 */
 }
 body[data-theme="dark"] p , body[data-theme="dark"] .span-about , body[data-theme="dark"] h5 , body[data-theme="dark"] span.price
@@ -131,8 +135,25 @@ body[data-theme="dark"] li button:hover
     color: #fbbf24;
 }
 /* ___________________________________________________________________ */
-/* categorys styles */
 
+body[data-theme="dark"] .card-menu,
+body[data-theme="dark"] .info-card {
+    background-color: #1e293b !important; /* slate-800 */
+    transition: .5s;
+}
+body[data-theme="dark"] .card-menu:hover,
+body[data-theme="dark"] .info-card:hover {
+    background: #1e293b !important; /* slate-800 */
+}
+body[data-theme="dark"] .card-menu h3,
+body[data-theme="dark"] .card-menu p,
+body[data-theme="dark"] .info-card h3,
+body[data-theme="dark"] .info-card p {
+    color: #f8fafc; /* slate-50 */
+}
+body[data-theme="dark"] .bg-gray-800 {
+    background: #0f172a; /* slate-900 */
+}
 
 /* Footer styles */
 footer {

@@ -15,7 +15,7 @@ const products = [
         title: "شاورما لحمة فرنساوي حار",
         category: "الساندوتشات",
         discription: "",
-        image: "shawarma_beef_french_hot.jpg",
+        image: "../assists/image/shawrma1.png",
         price: 80,
     },
     {
@@ -23,7 +23,7 @@ const products = [
         title: "شاورما لحمة فرنساوي",
         category: "الساندوتشات",
         discription: "",
-        image: "shawarma_beef_french.jpg",
+        image: "../assists/image/shawrma1.png",
         price: 75,
     },
     {
@@ -31,7 +31,7 @@ const products = [
         title: "شاورما فراخ فرنساوي حار",
         category: "الساندوتشات",
         discription: "",
-        image: "shawarma_chicken_french_hot.jpg",
+        image: "../assists/image/shwarma2.png",
         price: 70,
     },
     {
@@ -39,7 +39,7 @@ const products = [
         title: "شاورما فراخ فرنساوي",
         category: "الساندوتشات",
         discription: "",
-        image: "shawarma_chicken_french.jpg",
+        image: "../assists/image/shwarma2.png",
         price: 65,
     },
 
@@ -49,7 +49,7 @@ const products = [
         title: "ميني شاورما لحمة",
         category: "الميني ساندوتش",
         discription: "",
-        image: "mini_shawarma_beef.jpg",
+        image: "../assists/image/ميني .png",
         price: 35,
     },
     {
@@ -57,26 +57,8 @@ const products = [
         title: "ميني شاورما فراخ",
         category: "الميني ساندوتش",
         discription: "",
-        image: "mini_shawarma_chicken.jpg",
+        image: "../assists/image/ميني .png",
         price: 28,
-    },
-
-    // === ركن الأكيل ===
-    {
-        id: 7,
-        title: "شاورما لحمة فرنساوي جامبو",
-        category: "ركن الأكيل",
-        discription: "",
-        image: "shawarma_beef_jumbo.jpg",
-        price: 135,
-    },
-    {
-        id: 8,
-        title: "شاورما فراخ فرنساوي جامبو",
-        category: "ركن الأكيل",
-        discription: "",
-        image: "shawarma_chicken_jumbo.jpg",
-        price: 120,
     },
 
     // === وجبات عربي ===
@@ -85,7 +67,7 @@ const products = [
         title: "وجبة عربي لحمة",
         category: "وجبات عربي",
         discription: "",
-        image: "arabic_meal_beef.jpg",
+        image: "../assists/image/وجبه عربي لحمه.png",
         price: 100,
     },
     {
@@ -93,7 +75,7 @@ const products = [
         title: "وجبة عربي فراخ",
         category: "وجبات عربي",
         discription: "",
-        image: "arabic_meal_chicken.jpg",
+        image: "../assists/image/وجبه عربي فراخ.png",
         price: 90,
     },
 
@@ -103,7 +85,7 @@ const products = [
         title: "فتة شاورما لحمة",
         category: "الفتة",
         discription: "",
-        image: "fatteh_shawarma_beef.jpg",
+        image: "../assists/image/فته لحمه.png",
         price: 90,
     },
     {
@@ -111,7 +93,7 @@ const products = [
         title: "فتة شاورما فراخ",
         category: "الفتة",
         discription: "",
-        image: "fatteh_shawarma_chicken.jpg",
+        image: "../assists/image/فته فراخ.png",
         price: 80,
     },
     {
@@ -119,7 +101,7 @@ const products = [
         title: "فتة شاورما ميكس",
         category: "الفتة",
         discription: "",
-        image: "fatteh_shawarma_mix.jpg",
+        image: "../assists/image/فته لحمه.png",
         price: 90,
     },
 
@@ -129,7 +111,7 @@ const products = [
         title: "بطاطس",
         category: "المقبلات",
         discription: "",
-        image: "fries.jpg",
+        image: "../assists/image/بطاطس.webp",
         price: 25,
     },
     {
@@ -137,19 +119,10 @@ const products = [
         title: "كول سلو",
         category: "المقبلات",
         discription: "",
-        image: "coleslaw.jpg",
+        image: "../assists/image/سلطة-كول-سلو.webp",
         price: 22,
     },
 
-    // === المناسبات الخاصة ===
-    {
-        id: 16,
-        title: "متاح ميني بانييه شاورما لحمة أو فراخ خاص بالحفلات وأعياد الميلاد والمناسبات الخاصة",
-        category: "المناسبات الخاصة",
-        discription: "ميني بانييه شاورما لحمة أو فراخ، مثالي للحفلات والمناسبات الخاصة.",
-        image: "special_occasions.jpg",
-        price: null, // السعر حسب الطلب
-    },
 ];
 //____________________________________________________________________________________________________________________________
 let categoryType = "الكل";
@@ -195,9 +168,9 @@ function handelDisplayProduct(data) {
     let html = ``;
     data.forEach((product) => {
         html += `
-            <div class="card border border-amber-200 bg-transparent rounded-lg shadow-md overflow-hidden">
+            <div class="card-menu h-fit border border-amber-200  rounded-lg shadow-md overflow-hidden">
                     <div class="image-card">
-                        <img src="./assists/image/sh1.jpg" alt="شاورما دجاج" class="w-full h-[45vh] object-cover rounded-t-lg" />
+                        <img src="${product.image}" alt="شاورما دجاج" class="w-full  object-cover rounded-t-lg" />
                     </div>
                     <div class="info-card p-4 bg-white rounded-b-lg shadow-md">
                         <h3 class="text-xl font-bold mb-2">${product.title}</h3>

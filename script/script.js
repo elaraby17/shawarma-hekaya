@@ -15,7 +15,7 @@ const products = [
         title: "شاورما لحمة فرنساوي حار",
         category: "الساندوتشات",
         discription: "",
-        image: "../assists/image/shawrma1.png",
+        image: "../assists/image/shawarma1.png",
         price: 80,
     },
     {
@@ -23,7 +23,7 @@ const products = [
         title: "شاورما لحمة فرنساوي",
         category: "الساندوتشات",
         discription: "",
-        image: "../assists/image/shawrma1.png",
+        image: "../assists/image/shawarma1.png",
         price: 75,
     },
     {
@@ -31,7 +31,7 @@ const products = [
         title: "شاورما فراخ فرنساوي حار",
         category: "الساندوتشات",
         discription: "",
-        image: "../assists/image/shwarma2.png",
+        image: "../assists/image/shawarma2.png",
         price: 70,
     },
     {
@@ -39,7 +39,7 @@ const products = [
         title: "شاورما فراخ فرنساوي",
         category: "الساندوتشات",
         discription: "",
-        image: "../assists/image/shwarma2.png",
+        image: "../assists/image/shawarma2.png",
         price: 65,
     },
 

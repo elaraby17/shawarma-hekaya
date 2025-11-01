@@ -49,7 +49,7 @@ const products = [
         title: "ميني شاورما لحمة",
         category: "الميني ساندوتش",
         discription: "",
-    image: "../assists/image/ميني%20.png",
+    image: "../assists/image/mine.png",
         price: 35,
     },
     {
@@ -57,7 +57,7 @@ const products = [
         title: "ميني شاورما فراخ",
         category: "الميني ساندوتش",
         discription: "",
-    image: "../assists/image/ميني%20.png",
+    image: "../assists/image/mine.png",
         price: 28,
     },
 
@@ -67,7 +67,7 @@ const products = [
         title: "وجبة عربي لحمة",
         category: "وجبات عربي",
         discription: "",
-    image: "../assists/image/وجبه%20عربي%20لحمه.png",
+    image: "../assists/image/arabymeet.png",
         price: 100,
     },
     {
@@ -75,7 +75,7 @@ const products = [
         title: "وجبة عربي فراخ",
         category: "وجبات عربي",
         discription: "",
-    image: "../assists/image/وجبه%20عربي%20فراخ.png",
+    image: "../assists/image/arabyfra1.png",
         price: 90,
     },
 
@@ -85,7 +85,7 @@ const products = [
         title: "فتة شاورما لحمة",
         category: "الفتة",
         discription: "",
-    image: "../assists/image/فته%20لحمه.png",
+    image: "../assists/image/fatameet.png",
         price: 90,
     },
     {
@@ -93,7 +93,7 @@ const products = [
         title: "فتة شاورما فراخ",
         category: "الفتة",
         discription: "",
-    image: "../assists/image/فته%20فراخ.png",
+    image: "../assists/image/fatache.png",
         price: 80,
     },
     {
@@ -101,7 +101,7 @@ const products = [
         title: "فتة شاورما ميكس",
         category: "الفتة",
         discription: "",
-    image: "../assists/image/فته%20لحمه.png",
+    image: "../assists/image/fatameet.png",
         price: 90,
     },
 
@@ -111,7 +111,7 @@ const products = [
         title: "بطاطس",
         category: "المقبلات",
         discription: "",
-        image: "../assists/image/بطاطس.webp",
+        image: "../assists/image/frise.png",
         price: 25,
     },
     {
@@ -119,7 +119,7 @@ const products = [
         title: "كول سلو",
         category: "المقبلات",
         discription: "",
-        image: "../assists/image/سلطة-كول-سلو.webp",
+        image: "../assists/image/clowslow.png",
         price: 22,
     },
 

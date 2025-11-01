@@ -9,120 +9,28 @@ if (btnMode) {
 //____________________________________________________________________________________________________________________________
 // products data
 const products = [
-    // === الساندوتشات ===
-    {
-        id: 1,
-        title: "شاورما لحمة فرنساوي حار",
-        category: "الساندوتشات",
-        discription: "",
-        image: "../assists/image/shawarma1.png",
-        price: 80,
-    },
-    {
-        id: 2,
-        title: "شاورما لحمة فرنساوي",
-        category: "الساندوتشات",
-        discription: "",
-        image: "../assists/image/shawarma1.png",
-        price: 75,
-    },
-    {
-        id: 3,
-        title: "شاورما فراخ فرنساوي حار",
-        category: "الساندوتشات",
-        discription: "",
-        image: "../assists/image/shawarma2.png",
-        price: 70,
-    },
-    {
-        id: 4,
-        title: "شاورما فراخ فرنساوي",
-        category: "الساندوتشات",
-        discription: "",
-        image: "../assists/image/shawarma2.png",
-        price: 65,
-    },
+    { id: 1, title: "شاورما لحمة فرنساوي حار", category: "الساندوتشات", discription: "", image: "./assists/image/shawrma1.png", price: 80 },
+    { id: 2, title: "شاورما لحمة فرنساوي", category: "الساندوتشات", discription: "", image: "./assists/image/shawrma1.png", price: 75 },
+    { id: 3, title: "شاورما فراخ فرنساوي حار", category: "الساندوتشات", discription: "", image: "./assists/image/shwarma2.png", price: 70 },
+    { id: 4, title: "شاورما فراخ فرنساوي", category: "الساندوتشات", discription: "", image: "./assists/image/shwarma2.png", price: 65 },
 
-    // === الميني ساندوتش ===
-    {
-        id: 5,
-        title: "ميني شاورما لحمة",
-        category: "الميني ساندوتش",
-        discription: "",
-    image: "../assists/image/mine.png",
-        price: 35,
-    },
-    {
-        id: 6,
-        title: "ميني شاورما فراخ",
-        category: "الميني ساندوتش",
-        discription: "",
-    image: "../assists/image/mine.png",
-        price: 28,
-    },
+    { id: 5, title: "ميني شاورما لحمة", category: "الميني ساندوتش", discription: "", image: "./assists/image/mine.png", price: 35 },
+    { id: 6, title: "ميني شاورما فراخ", category: "الميني ساندوتش", discription: "", image: "./assists/image/mine.png", price: 28 },
 
-    // === وجبات عربي ===
-    {
-        id: 9,
-        title: "وجبة عربي لحمة",
-        category: "وجبات عربي",
-        discription: "",
-    image: "../assists/image/arabymeet.png",
-        price: 100,
-    },
-    {
-        id: 10,
-        title: "وجبة عربي فراخ",
-        category: "وجبات عربي",
-        discription: "",
-    image: "../assists/image/arabyfra1.png",
-        price: 90,
-    },
+    { id: 7, title: "شاورما لحمة فرنساوي جامبو", category: "ركن الأكيل", discription: "", image: "./assists/image/shawrma1.png", price: 135 },
+    { id: 8, title: "شاورما فراخ فرنساوي جامبو", category: "ركن الأكيل", discription: "", image: "./assists/image/shwarma2.png", price: 120 },
 
-    // === الفتة ===
-    {
-        id: 11,
-        title: "فتة شاورما لحمة",
-        category: "الفتة",
-        discription: "",
-    image: "../assists/image/fatameet.png",
-        price: 90,
-    },
-    {
-        id: 12,
-        title: "فتة شاورما فراخ",
-        category: "الفتة",
-        discription: "",
-    image: "../assists/image/fatache.png",
-        price: 80,
-    },
-    {
-        id: 13,
-        title: "فتة شاورما ميكس",
-        category: "الفتة",
-        discription: "",
-    image: "../assists/image/fatameet.png",
-        price: 90,
-    },
+    { id: 9, title: "وجبة عربي لحمة", category: "وجبات عربي", discription: "", image: "./assists/image/arabymeet.png", price: 100 },
+    { id: 10, title: "وجبة عربي فراخ", category: "وجبات عربي", discription: "", image: "./assists/image/arabyfra1.png", price: 90 },
 
-    // === المقبلات ===
-    {
-        id: 14,
-        title: "بطاطس",
-        category: "المقبلات",
-        discription: "",
-        image: "../assists/image/frise.png",
-        price: 25,
-    },
-    {
-        id: 15,
-        title: "كول سلو",
-        category: "المقبلات",
-        discription: "",
-        image: "../assists/image/clowslow.png",
-        price: 22,
-    },
+    { id: 11, title: "فتة شاورما لحمة", category: "الفتة", discription: "", image: "./assists/image/fatameet.png", price: 90 },
+    { id: 12, title: "فتة شاورما فراخ", category: "الفتة", discription: "", image: "./assists/image/fatache.png", price: 80 },
+    { id: 13, title: "فتة شاورما ميكس", category: "الفتة", discription: "", image: "./assists/image/fatameet.png", price: 90 },
 
+    { id: 14, title: "بطاطس", category: "المقبلات", discription: "", image: "./assists/image/frise.png", price: 25 },
+    { id: 15, title: "كول سلو", category: "المقبلات", discription: "", image: "./assists/image/clowslow.png", price: 22 },
+
+    { id: 16, title: "متاح ميني بانييه شاورما لحمة أو فراخ", category: "المناسبات الخاصة", discription: "ميني بانييه شاورما لحمة أو فراخ، مثالي للحفلات والمناسبات الخاصة.", image: "./assists/image/shawrma1.png", price: null },
 ];
 //____________________________________________________________________________________________________________________________
 let categoryType = "الكل";

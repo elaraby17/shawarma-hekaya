@@ -12,8 +12,8 @@ const products = [
     { id: 1, title: "شاورما لحمة فرنساوي", category: "الساندوتشات", discription: "", image: "./assists/image/food/shawirma-chekin.jpg", price: 75, tags: ["حار", "عادي"] },
     { id: 2, title: "شاورما فراخ فرنساوي", category: "الساندوتشات", discription: "", image: "./assists/image/food/shawirma-meet.jpg", price: 65, tags: ["حار", "عادي"] },
 
-    { id: 3, title: "كيزر شاورما لحمة", category: "الساندوتشات", discription: "", image: "./assists/image/food/mini-meet.jpg", price: 35, tags: ["حار", "عادي"] },
-    { id: 4, title: "كيزر شاورما فراخ", category: "الساندوتشات", discription: "", image: "./assists/image/food/mini-chekin.jpg", price: 28, tags: ["حار", "عادي"] },
+    { id: 3, title: "كيزر شاورما لحمة", category: "الساندوتشات", discription: "", image: "./assists/image/food/mini-meet.jpg", price: 55, tags: ["حار", "عادي"] },
+    { id: 4, title: "كيزر شاورما فراخ", category: "الساندوتشات", discription: "", image: "./assists/image/food/mini-chekin.jpg", price: 50, tags: ["حار", "عادي"] },
 
     { id: 5, title: "وجبة عربي لحمة", category: "وجبات عربي", discription: "", image: "./assists/image/food/araby-meet.jpg", price: 100, tags: ["حار", "عادي"] },
     { id: 6, title: "وجبة عربي فراخ", category: "وجبات عربي", discription: "", image: "./assists/image/food/araby-chekin.jpg", price: 90, tags: ["حار", "عادي"] },

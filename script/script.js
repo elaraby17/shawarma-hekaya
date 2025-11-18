@@ -9,24 +9,22 @@ if (btnMode) {
 //____________________________________________________________________________________________________________________________
 // products data
 const products = [
-    { id: 1, title: "شاورما لحمة بالخلطه المكسكية ", category: "الساندوتشات", discription: "", image: "./assists/image/food/shawirma-spasy.jpg", price: 80, tags: ["حار"] },
-    { id: 2, title: "شاورما لحمة فرنساوي", category: "الساندوتشات", discription: "", image: "./assists/image/food/shawirma-chekin.jpg", price: 75, tags: ["حار", "عادي"] },
-    { id: 3, title: "شاورما فراخ بالخلطة المكسيكة ", category: "الساندوتشات", discription: "", image: "./assists/image/food/shawirma-spasy-chekin.jpg", price: 70, tags: ["حار"] },
-    { id: 4, title: "شاورما فراخ فرنساوي", category: "الساندوتشات", discription: "", image: "./assists/image/food/shawirma-meet.jpg", price: 65, tags: ["حار", "عادي"] },
+    { id: 1, title: "شاورما لحمة فرنساوي", category: "الساندوتشات", discription: "", image: "./assists/image/food/shawirma-chekin.jpg", price: 75, tags: ["حار", "عادي"] },
+    { id: 2, title: "شاورما فراخ فرنساوي", category: "الساندوتشات", discription: "", image: "./assists/image/food/shawirma-meet.jpg", price: 65, tags: ["حار", "عادي"] },
 
-    { id: 5, title: "ميني شاورما لحمة", category: "الميني ساندوتش", discription: "", image: "./assists/image/food/mini-meet.jpg", price: 35, tags: ["حار", "عادي"] },
-    { id: 6, title: "ميني شاورما فراخ", category: "الميني ساندوتش", discription: "", image: "./assists/image/food/mini-chekin.jpg", price: 28, tags: ["حار", "عادي"] },
+    { id: 3, title: "ميني شاورما لحمة", category: "الميني ساندوتش", discription: "", image: "./assists/image/food/mini-meet.jpg", price: 35, tags: ["حار", "عادي"] },
+    { id: 4, title: "ميني شاورما فراخ", category: "الميني ساندوتش", discription: "", image: "./assists/image/food/mini-chekin.jpg", price: 28, tags: ["حار", "عادي"] },
 
-    { id: 7, title: "وجبة عربي لحمة", category: "وجبات عربي", discription: "", image: "./assists/image/food/araby-meet.jpg", price: 100, tags: ["حار", "عادي"] },
-    { id: 8, title: "وجبة عربي فراخ", category: "وجبات عربي", discription: "", image: "./assists/image/food/araby-chekin.jpg", price: 90, tags: ["حار", "عادي"] },
+    { id: 5, title: "وجبة عربي لحمة", category: "وجبات عربي", discription: "", image: "./assists/image/food/araby-meet.jpg", price: 100, tags: ["حار", "عادي"] },
+    { id: 6, title: "وجبة عربي فراخ", category: "وجبات عربي", discription: "", image: "./assists/image/food/araby-chekin.jpg", price: 90, tags: ["حار", "عادي"] },
 
-    { id: 9, title: "فتة شاورما لحمة", category: "الفتة", discription: "", image: "./assists/image/food/fata-meet.jpg", price: 90, tags: ["حار", "عادي"] },
-    { id: 10, title: "فتة شاورما فراخ", category: "الفتة", discription: "", image: "./assists/image/food/fata-chekin.jpg", price: 80, tags: ["حار", "عادي"] },
-    { id: 11, title: "فتة شاورما ميكس", category: "الفتة", discription: "", image: "./assists/image/food/fata-mix.jpg", price: 90, tags: ["حار", "عادي"] },
+    { id: 7, title: "فتة شاورما لحمة", category: "الفتة", discription: "", image: "./assists/image/food/fata-meet.jpg", price: 90, tags: ["حار", "عادي"] },
+    { id: 8, title: "فتة شاورما فراخ", category: "الفتة", discription: "", image: "./assists/image/food/fata-chekin.jpg", price: 80, tags: ["حار", "عادي"] },
+    { id: 9, title: "فتة شاورما ميكس", category: "الفتة", discription: "", image: "./assists/image/food/fata-mix.jpg", price: 90, tags: ["حار", "عادي"] },
 
-    { id: 12, title: "بطاطس", category: "المقبلات", discription: "", image: "./assists/image/food/frise.png", price: 25, tags: "" },
-    { id: 13, title: "كول سلو", category: "المقبلات", discription: "", image: "./assists/image/food/clowslow.png", price: 22, tags: "" },
-    { id: 14, title: "توميه", category: "المقبلات", discription: "", image: "./assists/image/food/tomiah.jpg", price: 5, tags: "" },
+    { id: 10, title: "بطاطس", category: "المقبلات", discription: "", image: "./assists/image/food/frise.png", price: 25, tags: "" },
+    { id: 11, title: "كول سلو", category: "المقبلات", discription: "", image: "./assists/image/food/clowslow.png", price: 22, tags: "" },
+    { id: 12, title: "توميه", category: "المقبلات", discription: "", image: "./assists/image/food/tomiah.jpg", price: 5, tags: "" },
 ];
 //____________________________________________________________________________________________________________________________
 let categoryType = "الكل";
@@ -127,4 +125,40 @@ if (navToggle && mainNav) {
             navToggle.setAttribute("aria-expanded", "false");
         }
     });
+}
+// progress-based line filler: expands from left to right as user scrolls down
+const lineScroller = document.querySelector(".line");
+if (lineScroller) {
+    // grow from left to right
+    lineScroller.style.transformOrigin = "left center";
+    // ensure initial state
+    lineScroller.style.transform = "scaleX(0)";
+
+    let ticking = false;
+    const updateLine = () => {
+        const doc = document.documentElement;
+        const scrollTop = window.scrollY || doc.scrollTop;
+        const maxScroll = doc.scrollHeight - doc.clientHeight;
+        let progress = maxScroll > 0 ? scrollTop / maxScroll : 1;
+        progress = Math.min(Math.max(progress, 0), 1);
+        lineScroller.style.transform = `scaleX(${progress})`;
+        ticking = false;
+    };
+
+    window.addEventListener("scroll", () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateLine);
+            ticking = true;
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateLine);
+            ticking = true;
+        }
+    });
+
+    // initial update in case page already scrolled or short page
+    updateLine();
 }
